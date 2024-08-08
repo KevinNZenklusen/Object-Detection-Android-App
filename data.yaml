@@ -1,0 +1,6 @@
+train: C:/Users/Kev9n/OneDrive/Documentos/TV-Screen-Object-Detection/DatasetV8/train/images
+val: C:/Users/Kev9n/OneDrive/Documentos/TV-Screen-Object-Detection/DatasetV8/valid/images
+test: C:/Users/Kev9n/OneDrive/Documentos/TV-Screen-Object-Detection/DatasetV8/test/images
+
+nc: 1
+names: ['tv']
