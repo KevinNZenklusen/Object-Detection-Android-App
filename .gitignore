@@ -7,6 +7,7 @@
 /runs/detect/predict
 /runs/detect/predict2
 /runs/detect/val
+/new_env
 get-pip.py
 runs/detect/train/train_batch0.jpg
 runs/detect/train/train_batch1.jpg
