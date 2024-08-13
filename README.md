@@ -1,37 +1,28 @@
-# Object detection app using YOLOv8 and Android
+Aplicación de movimiento del cursor del mouse usando YOLOv8 y Android
 
-### Check the video to understand the code: https://youtu.be/dl7rCmvIyiI
+Paso 1 (Entrenar y exportar el modelo de detección de objetos):
 
-## Step 1 (Train and export Object detection model):
-- git clone https://github.com/AarohiSingla/Object-Detection-Android-App.git
-  
-- Train yolov8 model on custom dataset and export it in .tflite format. (Check train_export_yolov8_model.ipynb )
+Entrenar el modelo yolov8 en un conjunto de datos personalizado y expórtalo en formato .tflite. (Consulta train_export_yolov8_model.ipynb)
 
-## Step 2 (Object detection android app setup):
-- Open android_app folder.
+Paso 2 (Configuración de la aplicación de detección de objetos para Android):
 
-- Put your .tflite model and .txt label file inside the assets folder. You can find assets folder at this location: <b> android_app\android_app\app\src\main\assets</b>
+Abre la carpeta android_app.
 
-- Rename paths of your model and labels file in Constants.kt file. You can find Constants.kt at this location: <b>android_app\android_app\app\src\main\java\com\surendramaran\yolov8tflite </b>
+Colocar el modelo .tflite y el archivo de etiquetas .txt dentro de la carpeta assets. Puede encontrar la carpeta assets en esta ubicación: <b> android_app\android_app\app\src\main\assets</b>
 
-- Download and install Android Studio from the official website (https://developer.android.com/studio)
+Cambie los caminos del modelo y del archivo de etiquetas en el archivo Constants.kt. Puede encontrar Constants.kt en esta ubicación: <b>android_app\android_app\app\src\main\java\com\vis2ai\yolov8tflite</b>
 
-- Once installed, open Android Studio from your applications menu.
+En res/values/string reemplazar con la IP local de la PC a controlar. Se utiliza puerto 5005.
 
-- When Android Studio opens, you'll see a welcome screen. Here, you'll find options to create a new project, open an existing project, or check out project from version control.Since you already have a project, click on "Open an existing Android Studio project".
+Paso 3 (Obtención de la ubicación detectada del mouse)
 
-- Navigate to the directory where your project is located and select the project's root folder. 
+Utilice el notebook mouse_cursor_controller.ipynb para habilitar el control del mouse vía WiFi
 
-- Build and Run
-![SAD1K9IGLAXS_jpg rf d634b3e06bebf7dd7d15b3e699e359d2](https://github.com/AarohiSingla/Object-Detection-Android-App/assets/60029146/08610d96-54e5-4425-85f9-c92e14f87a14)
+Créditos
+Este proyecto incluye el código de la aplicación de Android del siguiente repositorio:
+(https://github.com/surendramaran/YOLOv8-TfLite-Object-Detector)
 
+Video disponible:
+Consulte el video para entender el código: https://youtu.be/dl7rCmvIyiI
 
-
-
-## Credits
-
-This project includes the andrroid app code from the following repository:
-
-- [Original Repository Name](https://github.com/surendramaran/YOLOv8-TfLite-Object-Detector)
-
-Special thanks to [link-to-original-author-profile](https://github.com/surendramaran) for their contribution.
+Gracias a (https://github.com/surendramaran) por su contribución.
