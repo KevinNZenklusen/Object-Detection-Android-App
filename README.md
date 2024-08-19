@@ -2,14 +2,14 @@ Aplicación de movimiento del cursor del mouse usando YOLOv8 y Android
 
 Paso 1 (Entrenar y exportar el modelo de detección de objetos):
 
-Entrenar el modelo yolov8 en un conjunto de datos personalizado y expórtalo en formato .tflite. (Consulta train_export_yolov8_9_model.ipynb)
+Entrenar el modelo yolov8 en un conjunto de datos personalizado y expórtalo en formato .tflite. (Consulte train_export_yolov8_9_model.ipynb)
 La mejor versión del entrenamiento se encuentra en runs/detect/trainN/weights/best_saved_model/best_float32.tflite
 
 Paso 2 (Configuración de la aplicación de detección de objetos para Android):
 
-Abre la carpeta android_app.
+Abra la carpeta android_app.
 
-Colocar el modelo .tflite y el archivo de etiquetas .txt dentro de la carpeta assets. Puede encontrar la carpeta assets en esta ubicación: <b> android_app\android_app\app\src\main\assets</b>
+Colocque el modelo .tflite y el archivo de etiquetas .txt dentro de la carpeta assets. Puede encontrar la carpeta assets en esta ubicación: <b> android_app\android_app\app\src\main\assets</b>
 
 Cambie los caminos del modelo y del archivo de etiquetas en el archivo Constants.kt. Puede encontrar Constants.kt en esta ubicación: <b>android_app\android_app\app\src\main\java\com\vis2ai\yolov8tflite</b>
 
